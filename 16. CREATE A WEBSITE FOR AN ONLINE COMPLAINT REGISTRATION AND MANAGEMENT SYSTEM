@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Complaint System</title>
+</head>
+<body>
+    <h1>Welcome to Online Complaint System</h1>
+    <form action="login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <form action="register.php" method="POST">
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br><br>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br><br>
+
+        <button id="register">Register</button>
+    </form>
+
+    <form action="complaint.php" method="POST">
+        <label for="complaintText">Describe your complaint:</label>
+        <textarea id="complaintText" name="complaintText" required></textarea><br><br>
+
+        <!-- Google Maps integration for location marking -->
+        <div id="map"></div><br><br>
+
+        <input type="submit" value="Submit Complaint">
+    </form>
+
+    <a href="checkstatus.php">Check Complaint Status</a>
+
+    <form action="feedback.php" method="POST">
+        <label for="feedbackText">Provide Feedback:</label>
+        <textarea id="feedbackText" name="feedbackText" required></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+
+    <a href="C:\Users\sahithi\Documents\Internet programming\16officer.html">officer details</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Officer Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, Officer</h1>
+    <a href="viewcomplaint.php">View Complaint</a>
+    
+    <form action="updatestatus.php" method="POST">
+        <label for="complaintID">Complaint ID:</label>
+        <input type="text" id="complaintID" name="complaintID" required><br><br>
+
+        <label for="newStatus">Update Status:</label>
+        <input type="text" id="newStatus" name="newStatus" required><br><br>
+
+        <input type="submit" value="Update Status">
+    </form>
+
+    <form action="updateproof.php" method="POST">
+        <label for="complaintID">Complaint ID:</label>
+        <input type="text" id="complaintID" name="complaintID" required><br><br>
+
+        <label for="proofText">Proof of Work:</label>
+        <textarea id="proofText" name="proofText" required></textarea><br><br>
+
+        <input type="submit" value="Update Proof">
+        <a href="C:\Users\sahithi\Documents\Internet programming\16 3.html">Admin details</a>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, Administrator</h1>
+    
+    <form action="generateofficer.php" method="POST">
+        <label for="officerName">Officer Name:</label>
+        <input type="text" id="officerName" name="officerName" required><br><br>
+
+        <label for="officerPassword">Officer Password:</label>
+        <input type="password" id="officerPassword" name="officerPassword" required><br><br>
+
+        <input type="submit" value="Generate Officer Account">
+    </form>
+    <a href="C:\Users\sahithi\Documents\Internet programming\thank.html">NEXT</a>
+
+    <!-- Additional admin functionalities can be added here -->
+</body>
+</html>
+
+
